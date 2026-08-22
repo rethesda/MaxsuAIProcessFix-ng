@@ -43,7 +43,7 @@ void MoveToPackageLocation(RE::Actor* a_actor, bool a_arg1)
 void MoveTo_ImplMax(RE::TESObjectREFR* a_ref, const RE::ObjectRefHandle& a_targetHandle, RE::TESObjectCELL* a_targetCell, RE::TESWorldSpace* a_selfWorldSpace, const RE::NiPoint3& a_position, const RE::NiPoint3& a_rotation)
 {
 	using func_t = decltype(&MoveTo_ImplMax);
-	REL::Relocation<func_t> func{ RE::Offset::TESObjectREFR::MoveTo };
+	static REL::Relocation<func_t> func{ RELOCATION_ID(56227, 56626) };
 	return func(a_ref, a_targetHandle, a_targetCell, a_selfWorldSpace, a_position, a_rotation);
 }
 

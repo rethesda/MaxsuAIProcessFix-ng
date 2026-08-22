@@ -6,7 +6,7 @@ namespace MaxsuAIProcessFixNamespace
 #define MAP_MENU_NAME "MapMenu"
 #define SLEEP_WAIT_MENU_NAME "Sleep/Wait Menu"
 
-	extern class AIProDataHandler;
+	class AIProDataHandler;
 
 	class MoveAttachEventHandler;
 

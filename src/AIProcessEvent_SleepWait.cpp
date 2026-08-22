@@ -6,7 +6,7 @@
 
 namespace MaxsuAIProcessFixNamespace
 {
-	extern class MoveAttachEventHandler;
+	class MoveAttachEventHandler;
 	
 
 	EventResult MoveAttachEventHandler::ProcessEvent(const RE::TESMoveAttachDetachEvent* a_event, RE::BSTEventSource<RE::TESMoveAttachDetachEvent>* a_eventSource)

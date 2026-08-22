@@ -70,7 +70,7 @@ namespace MaxsuAIProcessFixNamespace
 				_MESSAGE("Register Sleep Start Stop Event");
 			}
 
-			if (ai_handler->IsEnableUpdateAfterFastTravel() && !REL::Module::IsVR)
+			if (ai_handler->IsEnableUpdateAfterFastTravel() && !REL::Module::IsVR())
 			{
 				ScriptEventSource->AddEventSink(&g_fasttravelhandler);
 				_MESSAGE("Register Fast Travel Event");
@@ -117,7 +117,7 @@ namespace MaxsuAIProcessFixNamespace
 			{
 				_FATALERROR("Abnormal! AI updating procecure broken in saving! Please report to the mod authour! (MaxsuAIProcessFix.DLL)");
 
-				MessageBox(NULL, L"Abnormal! Caught a fatal error during saving! Please report to the mod author!", L"Error Occured: MaxsuAIProcessFix.DLL", MB_OK | MB_ICONHAND);
+				MessageBoxW(NULL, L"Abnormal! Caught a fatal error during saving! Please report to the mod author!", L"Error Occured: MaxsuAIProcessFix.DLL", MB_OK | MB_ICONHAND);
 
 				abort();
 			}

@@ -179,7 +179,7 @@ namespace MaxsuAIProcessFixNamespace
 
 	void AIProDataHandler::AddthisLaterInActor(RE::Actor* thisactor)
 	{
-		if (IsUpdatableNPC)
+		if (IsUpdatableNPC(thisactor))
 		{
 			if (ActorsMap.count(thisactor->formID) == 0)
 			{

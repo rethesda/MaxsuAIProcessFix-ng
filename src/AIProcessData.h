@@ -5,7 +5,7 @@ namespace MaxsuAIProcessFixNamespace
 {
 #define MOD_NAME_LENGTH 255
 
-	extern class MoveAttachEventHandler;
+	class MoveAttachEventHandler;
 
 	SleepWaitStartHandle<RE::TESWaitStartEvent>;
 	SleepWaitStartHandle<RE::TESSleepStartEvent>;
